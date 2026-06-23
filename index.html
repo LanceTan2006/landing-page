@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReviewHub &mdash; Pass Your Board Exam Without Burning Out</title>
+  <meta name="description" content="ReviewHub is a digital review ecosystem for Filipino students preparing for LET, NLE, CPA, and board exams. Structured micro-study sessions, ReviewBuddy matching, guided review paths. Free to start.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <a href="#home" class="home-btn" aria-label="Back to top">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/>
+        <path d="M9 21V12h6v9"/>
+      </svg>
+      Home
+    </a>
+
+    <a href="#home" class="header-brand" aria-label="ReviewHub homepage">
+      <figure class="brand-logo">
+        <img src="ReviewHub_LOGO.png" alt="ReviewHub Logo">
+      </figure>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#spaces">Study Spaces</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-auth">
+      <a href="#login" class="btn-login">Log In</a>
+      <a href="#cta" class="btn-signup">Start Free &rarr;</a>
+      <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&auto=format&fit=crop&q=80" alt="" class="hero-bg-img">
+        <div class="hero-bg-overlay"></div>
+      </div>
+      <div class="hero-blob blob1" aria-hidden="true"></div>
+      <div class="hero-blob blob2" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="reveal-l">
+          <p class="hero-eyebrow">
+            <span aria-hidden="true"></span>
+            For LET, NLE, CPA &amp; Working Students
+          </p>
+
+          <h1 id="hero-heading">
+            Pass Your Board Exam Without
+            <span class="grad">Giving Up Your Life.</span>
+          </h1>
+
+          <p class="hero-sub">
+            ReviewHub gives you a structured, 10-minute-a-day review system &mdash;
+            with a matched study buddy, guided paths, and audio lessons &mdash;
+            so you can prepare consistently even with a full-time job.
+          </p>
+
+          <a href="#cta" class="btn-cta-primary hero-cta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Start Reviewing for Free
+          </a>
+
+          <p class="hero-proof">
+            &#9989;&nbsp;No credit card required &nbsp;&middot;&nbsp;
+            Joined by <strong>10,000+</strong> students &nbsp;&middot;&nbsp;
+            Free forever
+          </p>
+
+          <div class="hero-downloads" aria-label="Download the app">
+            <span class="download-label">Also available on:</span>
+            <a href="#" class="btn-download" aria-label="Download on the App Store">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            <a href="#" class="btn-download" aria-label="Get it on Google Play">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76a2 2 0 0 0 2.09-.22l11.67-6.58-2.76-2.77-11 11.57zM20.9 10.33l-3.07-1.73-3.07 3.07 3.07 3.07 3.09-1.74a2 2 0 0 0 0-2.67zM1.14.93A2 2 0 0 0 .5 2.5v19.01a2 2 0 0 0 .64 1.57l.09.08 10.64-10.64v-.25L1.23.85l-.09.08zM14.37 8.76L3.27.22A2 2 0 0 0 1.18 0l11 11.57 2.19-2.81z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-r" aria-label="ReviewHub app dashboard preview">
+          <div class="mock-card mc-main">
+            <div class="mc-label">Today&rsquo;s Review Session</div>
+            <div class="mc-title">LET &mdash; Professional Education</div>
+            <div class="mc-bar-wrap"><div class="mc-bar" style="width:68%"></div></div>
+            <div class="mc-meta"><span>68% Complete</span><span>14 min left</span></div>
+            <div class="mc-avatars">
+              <div class="mc-avatar av1">JR</div>
+              <div class="mc-avatar av2">MA</div>
+              <div class="mc-avatar av3">KL</div>
+              <span class="mc-count">+8 reviewing now</span>
+            </div>
+          </div>
+          <div class="mock-card mc-audio">
+            <div class="mc-pill">&#127911; Audio Mode</div>
+            <div class="mc-title">Board Exam &mdash; Ch. 4</div>
+            <div class="mc-wave" aria-hidden="true">
+              <div class="wave-bar w1"></div><div class="wave-bar w2"></div><div class="wave-bar w3"></div>
+              <div class="wave-bar w4"></div><div class="wave-bar w5"></div><div class="wave-bar w6"></div>
+              <div class="wave-bar w3"></div><div class="wave-bar w1"></div><div class="wave-bar w4"></div>
+            </div>
+            <p class="mc-sub">Study while commuting &#128652;</p>
+          </div>
+          <div class="mock-card mc-buddy">
+            <div class="mc-label">ReviewBuddy Match</div>
+            <div class="mc-avatars mc-avatars--lg">
+              <div class="mc-avatar av2">MA</div>
+              <div class="mc-avatar av4">RC</div>
+            </div>
+            <p class="mc-active">Study Group Active</p>
+            <p class="mc-online">&#9679; 2 online now</p>
+          </div>
+          <div class="mock-card mc-streak">
+            <div class="mc-label">Study Streak</div>
+            <div class="mc-streak-row">
+              <div class="streak-num">12</div>
+              <span aria-hidden="true">&#128293;</span>
+            </div>
+            <p class="mc-sub">days in a row</p>
+            <div class="streak-dots" aria-label="5 of 7 days completed">
+              <div class="sdot on"></div><div class="sdot on"></div><div class="sdot on"></div>
+              <div class="sdot on"></div><div class="sdot on"></div><div class="sdot"></div><div class="sdot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" role="list" aria-label="Platform statistics">
+      <div class="trust-item" role="listitem">
+        <span class="trust-icon" aria-hidden="true">&#128105;&#8205;&#127891;</span>
+        <div><div class="trust-num"><span>10,000+</span></div><div class="trust-label">Active Students</div></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <span class="trust-icon" aria-hidden="true">&#127942;</span>
+        <div><div class="trust-num"><span>4.8 / 5</span></div><div class="trust-label">Student Rating</div></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <span class="trust-icon" aria-hidden="true">&#9200;</span>
+        <div><div class="trust-num"><span>30%</span></div><div class="trust-label">Less Prep Time</div></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <span class="trust-icon" aria-hidden="true">&#128218;</span>
+        <div><div class="trust-num"><span>500+</span></div><div class="trust-label">Peer-Verified Reviewers</div></div>
+      </div>
+      <div class="trust-item" role="listitem">
+        <span class="trust-icon" aria-hidden="true">&#127891;</span>
+        <div><div class="trust-num"><span>SDG 4</span></div><div class="trust-label">Quality Education</div></div>
+      </div>
+    </div>
+
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <div class="about-grid">
+          <div class="reveal-l">
+            <p class="section-tag">Our Mission</p>
+            <h2 class="section-h" id="about-heading">A Capstone Project Built for Every Filipino Exam Taker</h2>
+            <p class="about-body">
+              ReviewHub is a capstone project developed at <strong>Davao Central College</strong>
+              in response to a real problem: Filipino working students and exam takers lack a
+              structured, accessible, and affordable way to review consistently.
+            </p>
+            <p class="about-body">
+              Aligned with <strong>SDG 4 &mdash; Quality Education</strong>, ReviewHub digitally adapts the
+              proven methods of physical review centers &mdash; structured reinforcement, peer accountability,
+              and active recall &mdash; and makes them available to every student, anywhere, on any device.
+            </p>
+            <ul class="about-pills" aria-label="Project highlights">
+              <li><span class="pill pill-blue">&#127891; SDG 4 Aligned</span></li>
+              <li><span class="pill pill-teal">&#128241; Mobile-First</span></li>
+              <li><span class="pill pill-gold">&#127480;&#127469; Made in the Philippines</span></li>
+              <li><span class="pill pill-blue">&#127275; Free to Use</span></li>
+            </ul>
+          </div>
+          <div class="about-visual reveal-r" aria-label="ReviewHub key values">
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">&#127979;</span>
+              <div>
+                <h3>Structured Like a Review Center</h3>
+                <p>Daily topic-organized sessions built around board exam syllabi, not random PDFs.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">&#129309;</span>
+              <div>
+                <h3>Community-Powered Accountability</h3>
+                <p>ReviewBuddy matching and study circles keep you consistent when motivation fades.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">&#128241;</span>
+              <div>
+                <h3>Designed for Real Life</h3>
+                <p>10-minute micro-sessions and audio mode let you study during commutes, breaks, or work shifts.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">&#129504;</span>
+              <div>
+                <h3>Adaptive &amp; Intelligent</h3>
+                <p>Quizzes that target your weak areas so every study minute counts toward your passing score.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem" aria-labelledby="problem-heading">
+      <div class="section-inner">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Sound Familiar?</p>
+          <h2 class="section-h" id="problem-heading">Reviewing Consistently Is Hard When Life Gets in the Way</h2>
+          <p class="section-sub">Most students don&rsquo;t fail board exams because they&rsquo;re not smart enough. They fail because their review strategy falls apart under real-life pressure.</p>
+        </header>
+
+        <div class="problem-grid">
+          <div class="prob-card reveal">
+            <div class="prob-icon" aria-hidden="true">&#128566;</div>
+            <div class="prob-accent acc-red"></div>
+            <div class="prob-stat">72%</div>
+            <h3 class="prob-label">of students burn out before exam day</h3>
+            <p class="prob-desc">Juggling work, school, and review with no structure leads to exhaustion &mdash; not readiness.</p>
+          </div>
+          <div class="prob-card reveal">
+            <div class="prob-icon" aria-hidden="true">&#128197;</div>
+            <div class="prob-accent acc-amber"></div>
+            <div class="prob-stat">3 Days</div>
+            <h3 class="prob-label">before the exam &mdash; most start reviewing</h3>
+            <p class="prob-desc">There&rsquo;s no consistent plan between classes and exam day, so cramming becomes the only option.</p>
+          </div>
+          <div class="prob-card reveal">
+            <div class="prob-icon" aria-hidden="true">&#129333;</div>
+            <div class="prob-accent acc-purple"></div>
+            <div class="prob-stat">1 in 2</div>
+            <h3 class="prob-label">students study completely alone</h3>
+            <p class="prob-desc">No accountability partner means no one to hold you to your schedule when motivation drops.</p>
+          </div>
+        </div>
+
+        <div class="problem-callout reveal">
+          <p class="callout-text">
+            &#128073; The fix isn&rsquo;t studying <em>harder</em> &mdash; it&rsquo;s having a
+            <strong>system that works with your schedule</strong>, not against it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features" aria-labelledby="features-heading">
+      <div class="section-bg-img" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600&auto=format&fit=crop&q=80" alt="">
+        <div class="section-bg-overlay features-overlay"></div>
+      </div>
+      <div class="section-inner section-inner-rel">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Platform Features</p>
+          <h2 class="section-h" id="features-heading">Everything You Need to Review Smarter &mdash; Not Harder</h2>
+          <p class="section-sub">Built around how real working students actually study, not how they&rsquo;re supposed to.</p>
+        </header>
+
+        <div class="features-grid">
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-blue">Stop Cramming</p>
+            <div class="feat-icon" aria-hidden="true">&#9889;</div>
+            <h3 class="feat-name">10-Minute Micro-Study Sessions</h3>
+            <p class="feat-desc"><strong>Review in your commute, lunch break, or between tasks.</strong> Sessions are pre-built to fit any gap in your day &mdash; no 3-hour blocks required.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-teal">No Screen? No Problem</p>
+            <div class="feat-icon teal-icon" aria-hidden="true">&#127911;</div>
+            <h3 class="feat-name">Audio Learning Mode</h3>
+            <p class="feat-desc"><strong>Turn any reviewer into a podcast.</strong> Listen while commuting, cooking, or exercising. Your ears are studying even when your eyes can&rsquo;t.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-gold">Beat the Accountability Gap</p>
+            <div class="feat-icon gold-icon" aria-hidden="true">&#129309;</div>
+            <h3 class="feat-name">ReviewBuddy Matching</h3>
+            <p class="feat-desc"><strong>Get matched with a study partner who shares your exam and schedule.</strong> When someone is counting on you, skipping a session stops feeling like an option.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-blue">Always Know What to Study</p>
+            <div class="feat-icon" aria-hidden="true">&#128506;</div>
+            <h3 class="feat-name">Guided Review Paths</h3>
+            <p class="feat-desc"><strong>Follow a day-by-day topic trail built for your specific exam.</strong> No more staring at a pile of PDFs wondering where to start.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-blue">Study Smarter Over Time</p>
+            <div class="feat-icon" aria-hidden="true">&#129329;</div>
+            <h3 class="feat-name">Adaptive Practice Quizzes</h3>
+            <p class="feat-desc"><strong>Quizzes that learn from your weak spots and focus your time there.</strong> Stop re-reviewing what you already know.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-gold">Stay Consistent</p>
+            <div class="feat-icon gold-icon" aria-hidden="true">&#128293;</div>
+            <h3 class="feat-name">Study Streaks &amp; Progress Dashboard</h3>
+            <p class="feat-desc"><strong>Visual proof that you&rsquo;re making progress every day.</strong> Streaks, milestones, and leaderboards turn review into a habit.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-gold">Earn While You Learn</p>
+            <div class="feat-icon gold-icon" aria-hidden="true">&#128722;</div>
+            <h3 class="feat-name">Peer Reviewer Marketplace</h3>
+            <p class="feat-desc"><strong>Access top-rated, peer-created reviewers or earn by uploading your own.</strong> A curated, community-verified resource hub.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-teal">Plan Around Real Life</p>
+            <div class="feat-icon teal-icon" aria-hidden="true">&#128197;</div>
+            <h3 class="feat-name">Smart Study Time Manager</h3>
+            <p class="feat-desc"><strong>Input your work schedule and exam date.</strong> ReviewHub builds a realistic plan around your actual availability &mdash; not an ideal one.</p>
+          </div>
+          <div class="feat-card reveal">
+            <p class="feat-badge badge-teal">Study Outside the House</p>
+            <div class="feat-icon teal-icon" aria-hidden="true">&#128205;</div>
+            <h3 class="feat-name">Study Caf&eacute; Finder</h3>
+            <p class="feat-desc"><strong>Discover WiFi-ready, student-rated caf&eacute;s near you.</strong> Sometimes getting out of the house is all it takes to get back on track.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-it-works" id="how-it-works" aria-labelledby="hiw-heading">
+      <div class="section-inner">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Getting Started</p>
+          <h2 class="section-h" id="hiw-heading">Up and Reviewing in Under 5 Minutes</h2>
+          <p class="section-sub">No complicated setup. No overwhelm. Just open the app and go.</p>
+        </header>
+
+        <ol class="hiw-steps" aria-label="How ReviewHub works">
+          <li class="hiw-step reveal">
+            <div class="hiw-num" aria-hidden="true">1</div>
+            <div class="hiw-content">
+              <h3>Create your free account &amp; pick your exam</h3>
+              <p>Tell us what you&rsquo;re preparing for &mdash; LET, NLE, CPA, or any board exam &mdash; and when your exam date is. Takes 60 seconds.</p>
+            </div>
+          </li>
+          <li class="hiw-step reveal">
+            <div class="hiw-num" aria-hidden="true">2</div>
+            <div class="hiw-content">
+              <h3>Get your personalised study plan &amp; a ReviewBuddy</h3>
+              <p>ReviewHub builds a day-by-day schedule around <em>your</em> real availability and matches you with a study partner heading to the same finish line.</p>
+            </div>
+          </li>
+          <li class="hiw-step reveal">
+            <div class="hiw-num" aria-hidden="true">3</div>
+            <div class="hiw-content">
+              <h3>Study for 10 minutes a day &mdash; anywhere</h3>
+              <p>Open a micro-session on your phone, plug in your earphones for audio mode, or check in with your study group. Small consistent actions add up to a passed exam.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section community" id="community" aria-labelledby="community-heading">
+      <div class="section-bg-img" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&auto=format&fit=crop&q=80" alt="">
+        <div class="section-bg-overlay community-overlay"></div>
+      </div>
+      <div class="section-inner section-inner-rel">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Study Community</p>
+          <h2 class="section-h" id="community-heading">2,400 Students Are Studying Right Now. Join Them.</h2>
+          <p class="section-sub">Accountability is the single biggest predictor of exam success. ReviewHub&rsquo;s community makes it impossible to fall off track.</p>
+        </header>
+
+        <div class="community-grid">
+          <div class="comm-card comm-wide reveal">
+            <div class="comm-icon-wrap wrap-blue" aria-hidden="true">&#128101;</div>
+            <h3>Study Groups by Exam &amp; Schedule</h3>
+            <p>Join a group of students taking the same exam. Share notes, quiz each other, and stay consistent together.</p>
+            <ul class="comm-tags" aria-label="Available study groups">
+              <li><span class="comm-tag">LET Takers</span></li>
+              <li><span class="comm-tag">NLE &mdash; Nursing</span></li>
+              <li><span class="comm-tag">CPA Review</span></li>
+              <li><span class="comm-tag">Engineering Board</span></li>
+              <li><span class="comm-tag">Architecture</span></li>
+              <li><span class="comm-tag">Working Students</span></li>
+            </ul>
+            <div class="comm-avatars" aria-label="Active members">
+              <div class="comm-avatar av1">JR</div>
+              <div class="comm-avatar av2">MA</div>
+              <div class="comm-avatar av3">KL</div>
+              <div class="comm-avatar av4">RC</div>
+              <div class="comm-avatar comm-avatar--pink">SF</div>
+              <span class="comm-count">+2,400 members studying today</span>
+            </div>
+          </div>
+          <div class="comm-card reveal">
+            <div class="comm-icon-wrap wrap-teal" aria-hidden="true">&#128276;</div>
+            <h3>Daily Check-In Circles</h3>
+            <p>Groups of 3&ndash;6 students who post a daily update. Knowing people will see whether you studied is a surprisingly powerful motivator.</p>
+          </div>
+          <div class="comm-card reveal">
+            <div class="comm-icon-wrap wrap-gold" aria-hidden="true">&#127885;</div>
+            <h3>Leaderboards &amp; Milestones</h3>
+            <p>Weekly study hour boards, subject mastery badges, and streak achievements make consistent review feel like a game you&rsquo;re winning.</p>
+          </div>
+          <div class="comm-card reveal">
+            <div class="comm-icon-wrap wrap-blue" aria-hidden="true">&#128172;</div>
+            <h3>Shared Review Feed</h3>
+            <p>Post study notes, share breakthroughs, ask questions, and get answers from peers and top reviewees in your community feed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spaces" id="spaces" aria-labelledby="spaces-heading">
+      <div class="section-inner">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Study Caf&eacute; Finder</p>
+          <h2 class="section-h" id="spaces-heading">Find Your Perfect Study Space</h2>
+          <p class="section-sub">Discover WiFi-ready, student-friendly caf&eacute;s and review spaces near you &mdash; curated and rated by the ReviewHub community.</p>
+        </header>
+
+        <div class="spaces-grid">
+          <div class="space-card reveal">
+            <div class="space-thumb thumb-cafe" aria-hidden="true">&#9749;</div>
+            <div class="space-body">
+              <h3 class="space-name">Brewed Awakening Caf&eacute;</h3>
+              <p class="space-area">&#128205; Toril, Davao City</p>
+              <ul class="space-tags" aria-label="Tags">
+                <li><span class="space-tag">WiFi &#10003;</span></li>
+                <li><span class="space-tag">Outlets &#10003;</span></li>
+                <li><span class="space-tag tl">Quiet Zone</span></li>
+              </ul>
+              <div class="space-rating">
+                <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating-num">4.9</span>
+                <span class="rating-count">(128 reviews)</span>
+              </div>
+              <ul class="space-amenities" aria-label="Facilities">
+                <li><span class="amenity">&#128267; Charging</span></li>
+                <li><span class="amenity">&#127777; A/C</span></li>
+                <li><span class="amenity">&#129681; Spacious</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="space-card reveal">
+            <div class="space-thumb thumb-lib" aria-hidden="true">&#128218;</div>
+            <div class="space-body">
+              <h3 class="space-name">DCC Learning Commons</h3>
+              <p class="space-area">&#128205; Juan dela Cruz St, Davao City</p>
+              <ul class="space-tags" aria-label="Tags">
+                <li><span class="space-tag">WiFi &#10003;</span></li>
+                <li><span class="space-tag tl">Library Access</span></li>
+                <li><span class="space-tag">Free</span></li>
+              </ul>
+              <div class="space-rating">
+                <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating-num">4.8</span>
+                <span class="rating-count">(94 reviews)</span>
+              </div>
+              <ul class="space-amenities" aria-label="Facilities">
+                <li><span class="amenity">&#128267; Charging</span></li>
+                <li><span class="amenity">&#128214; Resources</span></li>
+                <li><span class="amenity">&#129296; Silent</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="space-card reveal">
+            <div class="space-thumb thumb-co" aria-hidden="true">&#128187;</div>
+            <div class="space-body">
+              <h3 class="space-name">StudyNest Co-Working</h3>
+              <p class="space-area">&#128205; Buhangin, Davao City</p>
+              <ul class="space-tags" aria-label="Tags">
+                <li><span class="space-tag">Fast WiFi</span></li>
+                <li><span class="space-tag">24/7 &#10003;</span></li>
+                <li><span class="space-tag tl">Group Rooms</span></li>
+              </ul>
+              <div class="space-rating">
+                <span class="stars" aria-label="4.6 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                <span class="rating-num">4.6</span>
+                <span class="rating-count">(67 reviews)</span>
+              </div>
+              <ul class="space-amenities" aria-label="Facilities">
+                <li><span class="amenity">&#128424; Printer</span></li>
+                <li><span class="amenity">&#128267; Charging</span></li>
+                <li><span class="amenity">&#9749; Coffee</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta-row">
+          <a href="#" class="btn-ghost">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            View All Study Spaces Near You
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="stories" aria-labelledby="stories-heading">
+      <div class="section-bg-img" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=1600&auto=format&fit=crop&q=80" alt="">
+        <div class="section-bg-overlay stories-overlay"></div>
+      </div>
+      <div class="section-inner section-inner-rel">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Student Stories</p>
+          <h2 class="section-h" id="stories-heading">Real Students. Specific Results.</h2>
+          <p class="section-sub">Not vague endorsements &mdash; concrete outcomes from students who studied the same way you will.</p>
+        </header>
+
+        <div class="test-grid">
+          <article class="test-card reveal" aria-labelledby="story-maria">
+            <p class="test-tag tag-let">LET Passer</p>
+            <p class="test-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="test-quote" aria-hidden="true">&ldquo;</p>
+            <blockquote class="test-text">
+              I work 8 hours a day as a call centre agent. Before ReviewHub I had zero structure
+              and failed my first LET attempt. I used the 10-minute audio sessions during my
+              commute for 3 months and <strong>passed on my second try with an 82.</strong>
+            </blockquote>
+            <footer class="test-author">
+              <div class="test-avatar av2" aria-hidden="true">MR</div>
+              <div>
+                <p class="test-name" id="story-maria">Maria Reyes</p>
+                <p class="test-role">LET Passer &middot; Elementary Education</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="test-card reveal" aria-labelledby="story-jose">
+            <p class="test-tag tag-board">NLE Passer</p>
+            <p class="test-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="test-quote" aria-hidden="true">&ldquo;</p>
+            <blockquote class="test-text">
+              I was a part-time nurse with no idea where to start for the NLE. My ReviewBuddy
+              and I checked in every morning for 10 weeks.
+              <strong>Both of us passed. I improved my mock exam score by 34 points.</strong>
+            </blockquote>
+            <footer class="test-author">
+              <div class="test-avatar av1" aria-hidden="true">JD</div>
+              <div>
+                <p class="test-name" id="story-jose">Jose Dela Cruz</p>
+                <p class="test-role">NLE Passer &middot; Nursing</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="test-card reveal" aria-labelledby="story-kyla">
+            <p class="test-tag tag-work">CPA Passer</p>
+            <p class="test-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="test-quote" aria-hidden="true">&ldquo;</p>
+            <blockquote class="test-text">
+              I was burning out on 60-hour study weeks and not retaining anything.
+              ReviewHub&rsquo;s adaptive quizzes cut my prep time in half.
+              <strong>I passed my CPA board on the first take with a rating of 79.5.</strong>
+            </blockquote>
+            <footer class="test-author">
+              <div class="test-avatar av3" aria-hidden="true">KL</div>
+              <div>
+                <p class="test-name" id="story-kyla">Kyla Lim</p>
+                <p class="test-role">CPA Passer &middot; BS Accountancy</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section auth-preview" id="login" aria-labelledby="auth-heading">
+      <div class="section-inner">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Get Started Today</p>
+          <h2 class="section-h" id="auth-heading">Join the ReviewHub Community</h2>
+          <p class="section-sub">Create a free account in seconds and start studying smarter today.</p>
+        </header>
+
+        <div class="auth-grid">
+          <div class="auth-card reveal" id="login-form">
+            <header class="auth-card-header">
+              <figure class="auth-logo"><img src="ReviewHub_LOGO.png" alt="ReviewHub"></figure>
+              <h3>Welcome Back</h3>
+              <p>Log in to continue your review journey</p>
+            </header>
+            <form class="auth-form" aria-label="Log in form" onsubmit="return false">
+              <div class="form-group">
+                <label for="login-email">Email address</label>
+                <input type="email" id="login-email" placeholder="you@email.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" autocomplete="current-password">
+              </div>
+              <a href="#" class="forgot-link">Forgot password?</a>
+              <button type="submit" class="btn-auth-primary">Log In</button>
+            </form>
+            <p class="auth-switch">Don&rsquo;t have an account? <a href="#signup">Sign up free</a></p>
+          </div>
+
+          <div class="auth-card auth-card-signup reveal" id="signup">
+            <header class="auth-card-header">
+              <figure class="auth-logo"><img src="ReviewHub_LOGO.png" alt="ReviewHub"></figure>
+              <h3>Create Your Account</h3>
+              <p>Free forever. Start reviewing in minutes.</p>
+            </header>
+            <form class="auth-form" aria-label="Sign up form" onsubmit="return false">
+              <div class="form-group">
+                <label for="signup-name">Full name</label>
+                <input type="text" id="signup-name" placeholder="Maria Santos" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="signup-email">Email address</label>
+                <input type="email" id="signup-email" placeholder="you@email.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="signup-password">Create password</label>
+                <input type="password" id="signup-password" placeholder="Min. 8 characters" autocomplete="new-password">
+              </div>
+              <div class="form-group">
+                <label for="signup-goal">What are you reviewing for?</label>
+                <select id="signup-goal">
+                  <option value="">Select your goal&hellip;</option>
+                  <option>LET (Licensure Exam for Teachers)</option>
+                  <option>NLE (Nursing Board Exam)</option>
+                  <option>CPA Board Exam</option>
+                  <option>Engineering Board Exam</option>
+                  <option>College Finals</option>
+                  <option>Other Board Exam</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-auth-primary btn-signup-color">Create Free Account</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="#login-form">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner">
+        <header class="section-header-center reveal">
+          <p class="section-tag center">Common Questions</p>
+          <h2 class="section-h" id="faq-heading">Everything You&rsquo;re Wondering, Answered.</h2>
+        </header>
+
+        <div class="faq-grid">
+          <details class="faq-item reveal">
+            <summary class="faq-q">Is ReviewHub really free?</summary>
+            <p class="faq-a">Yes. The core platform &mdash; micro-sessions, guided paths, ReviewBuddy matching, and study groups &mdash; is completely free. No credit card needed. A premium tier with offline access and advanced analytics is available, but everything you need to pass is free.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-q">I only have 30 minutes a day. Will this actually work?</summary>
+            <p class="faq-a">That&rsquo;s more than enough. Sessions are designed for 10&ndash;15 minutes. Three short sessions a day adds up to 90 minutes of focused, structured review &mdash; far more effective than 3 hours of unfocused reading.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-q">Which board exams does ReviewHub cover?</summary>
+            <p class="faq-a">Currently: LET, NLE (Nursing), CPA, Engineering, and Architecture. More exams are being added based on community demand. Join the waitlist if yours isn&rsquo;t listed yet.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-q">What if I fall behind on my study plan?</summary>
+            <p class="faq-a">ReviewHub automatically reschedules missed sessions and notifies your ReviewBuddy. The plan adapts to real life &mdash; it doesn&rsquo;t pile up missed sessions and make you feel worse.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-q">How is this different from YouTube or PDFs?</summary>
+            <p class="faq-a">YouTube and PDFs don&rsquo;t know what you&rsquo;ve already studied, when your exam is, or that you skipped yesterday. ReviewHub combines structured paths, adaptive quizzes, a real accountability partner, and a community &mdash; none of which a PDF can provide.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary class="faq-q">Can I use ReviewHub offline?</summary>
+            <p class="faq-a">Audio lessons and downloaded review modules work offline on mobile. A connection is needed to sync progress, access community features, and stream new content.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta" aria-labelledby="cta-heading">
+      <div class="cta-blob1" aria-hidden="true"></div>
+      <div class="cta-blob2" aria-hidden="true"></div>
+      <div class="cta-inner reveal">
+        <p class="cta-tag"><span class="cta-tag-line" aria-hidden="true"></span>Start Today &mdash; It&rsquo;s Free</p>
+        <h2 class="cta-h" id="cta-heading">
+          Your Exam Is Coming. <span>Start Building Your Plan Now.</span>
+        </h2>
+        <p class="cta-sub">Join 10,000+ students who are reviewing smarter. Set up your account in under 60 seconds and get your personalised study plan today.</p>
+
+        <form class="cta-form" aria-label="Create your free ReviewHub account" onsubmit="return false">
+          <div class="cta-form-row">
+            <div class="cta-field">
+              <label for="cta-name" class="sr-only">Full name</label>
+              <input type="text" id="cta-name" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="cta-field">
+              <label for="cta-email" class="sr-only">Email address</label>
+              <input type="email" id="cta-email" placeholder="your@email.com" autocomplete="email" required>
+            </div>
+            <button type="submit" class="btn-cta-form">
+              Start Reviewing Free
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+          <p class="cta-risk">&#128274; No credit card required &nbsp;&middot;&nbsp; Cancel anytime &nbsp;&middot;&nbsp; Free forever</p>
+        </form>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+          Back to Top
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <figure><img src="ReviewHub_LOGO.png" alt="ReviewHub Logo"></figure>
+          <p>A digital review ecosystem for Filipino students, working professionals, LET takers, and board exam reviewees who want to study smarter &mdash; not harder.</p>
+          <p class="footer-capstone">A capstone project by Davao Central College &middot; BS Information Technology</p>
+          <nav aria-label="Social media">
+            <ul class="footer-socials">
+              <li><a href="#" class="social-btn" aria-label="Facebook">f</a></li>
+              <li><a href="#" class="social-btn" aria-label="LinkedIn">in</a></li>
+              <li><a href="#" class="social-btn" aria-label="Twitter">tw</a></li>
+              <li><a href="#" class="social-btn" aria-label="Instagram">ig</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="footer-col" aria-label="Platform">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#spaces">Study Spaces</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Exams covered">
+          <h4>Exams Covered</h4>
+          <ul>
+            <li><a href="#cta">LET &mdash; Teachers</a></li>
+            <li><a href="#cta">NLE &mdash; Nursing</a></li>
+            <li><a href="#cta">CPA Board Exam</a></li>
+            <li><a href="#cta">Engineering Board</a></li>
+            <li><a href="#cta">Architecture Board</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About ReviewHub</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 ReviewHub &mdash; Davao Central College, Inc. &middot; All rights reserved.</p>
+        <nav aria-label="Legal">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="fab-home" aria-label="Back to top">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/>
+      <path d="M9 21V12h6v9"/>
+    </svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
