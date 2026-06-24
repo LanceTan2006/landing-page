@@ -18,7 +18,7 @@
       btn.setAttribute('aria-pressed', 'true');
 
       const isYearly = btn.dataset.period === 'yearly';
-      priceEl.textContent  = isYearly ? '₱209'     : '₱299';
+      priceEl.textContent  = isYearly ? '₱69'     : '₱99';
       periodEl.textContent = isYearly ? '/ month'  : '/ month';
       if (noteEl) noteEl.hidden = !isYearly;
     });
