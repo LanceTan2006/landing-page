@@ -1,5 +1,30 @@
 /* ReviewHub — main.js */
 
+// ── Pricing toggle ────────────────────────
+(function initPricingToggle() {
+  const btns      = document.querySelectorAll('.ptoggle');
+  const priceEl   = document.getElementById('pro-price');
+  const periodEl  = document.getElementById('pro-period');
+  const noteEl    = document.getElementById('pro-yearly-note');
+  if (!btns.length || !priceEl) return;
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btns.forEach((b) => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+
+      const isYearly = btn.dataset.period === 'yearly';
+      priceEl.textContent  = isYearly ? '₱209'     : '₱299';
+      periodEl.textContent = isYearly ? '/ month'  : '/ month';
+      if (noteEl) noteEl.hidden = !isYearly;
+    });
+  });
+})();
+
 // ── Scroll Reveal ─────────────────────────
 (function initScrollReveal() {
   const els = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
